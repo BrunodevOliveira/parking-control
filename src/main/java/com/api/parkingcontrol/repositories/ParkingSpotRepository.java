@@ -8,7 +8,7 @@ import org.springframework.stereotype.Repository;
 import com.api.parkingcontrol.models.ParkingSpotModel;
 
 @Repository
-public interface ParkingSpotRepository extends JpaRepository<ParkingSpotModel, UUID> {//passo o modelo e a chave única
+public interface ParkingSpotRepository extends JpaRepository<ParkingSpotModel, UUID> {
 	
 	 boolean existsByLicensePlateCar(String licenserPlateCar);
 	 boolean existsByParkingSpotNumber(String parkingSpotNumber);

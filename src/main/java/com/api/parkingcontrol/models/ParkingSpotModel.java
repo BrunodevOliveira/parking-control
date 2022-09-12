@@ -18,9 +18,9 @@ public class ParkingSpotModel implements Serializable {
 	
 	@Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private UUID id; //identificador da tabela
+    private UUID id;
 	
-    @Column(nullable = false, unique = true, length = 10) //campo será único, não pode ser nulo e limitado a 10 caractéres
+    @Column(nullable = false, unique = true, length = 10)
     private String parkingSpotNumber;
     
     @Column(nullable = false, unique = true, length = 7)

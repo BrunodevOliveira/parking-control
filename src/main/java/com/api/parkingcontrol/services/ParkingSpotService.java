@@ -12,18 +12,15 @@ import com.api.parkingcontrol.repositories.ParkingSpotRepository;
 import java.util.Optional;
 import java.util.UUID;
 
-@Service //é um Bin de serviço 
+@Service
 public class ParkingSpotService {
-	//Service é a camada intermediária entre o controller e o Repository
-	
-	//Serve para criar um ponto de injeção e avisar para o spring que aqui vai precisar ser injetado dados da classe ParkingSpotRepository
 	final ParkingSpotRepository parkingSpotRepository;
 	
 	public ParkingSpotService(ParkingSpotRepository parkingSpotRepository) {
-		this.parkingSpotRepository = parkingSpotRepository; //injeção dos daddos de ParkingSpotRepository
+		this.parkingSpotRepository = parkingSpotRepository;
 	}
 	
-	@Transactional //importante para cada transação
+	@Transactional
 	public ParkingSpotModel save(ParkingSpotModel parkingSpotModel) {
 		return parkingSpotRepository.save(parkingSpotModel);
 	}

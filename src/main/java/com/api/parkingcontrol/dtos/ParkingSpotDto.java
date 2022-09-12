@@ -4,13 +4,10 @@ import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Size;
 
 public class ParkingSpotDto {
-	//Recebe e realiza as validações iniciais dos campos enviados pelo cliente
-	//Essas notações vem do pacote que foi instalado no inicio do projeto chamado starter validation
-	
-  	@NotBlank //Verifica se o campo não é nulo ou vazio
+  	@NotBlank
     private String parkingSpotNumber;
     @NotBlank
-    @Size(max = 7) //Limita o número de caractéres
+    @Size(max = 7)
     private String licensePlateCar;
     @NotBlank
     private String brandCar;
