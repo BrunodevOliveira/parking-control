@@ -4,7 +4,7 @@
 </div>
 
 
-## Sobre o projeto
+## 🔎 Sobre o projeto
 API de controle de estacionamento que visa por em pratica o aprendizado na linguagem Java utilizando Spring Boot.
 
 ## Competências praticadas no projeto
@@ -18,6 +18,16 @@ API de controle de estacionamento que visa por em pratica o aprendizado na lingu
 - Conexão com banco de dados relacional PostgresSQL
 - Validação de dados via JPA
 - CRUD Completo
+
+## 🎲 Clonando a aplicação
+
+#### Clone este repositório
+$ git clone <https://github.com/BrunodevOliveira/parking-control-Spring-boot.git>
+
+#### Para executar o projeto, será necessário instalar os seguintes programas
+- [JDK 11](https://www.oracle.com/java/technologies/downloads/)
+- [Maven 3.8.6](https://maven.apache.org/download.cgi)
+- [Intellij](https://www.jetbrains.com/pt-br/idea/download/#section=windows)
 
 ## Tecnologias utilizadas
 <p>
